@@ -1,0 +1,211 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-08-18 00:57:54) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 22ms (View: 4, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:01:33) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:08:35) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:08:38) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (76.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-08-18 01:08:57) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 44ms (View: 5, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:09:02) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:09:07) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:09:08) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: products: SELECT * FROM "products" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: products: SELECT * FROM "products" ):
+  app/controllers/products_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:10:05) [GET]
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/products_controller.rb:16:in `+'
+  app/controllers/products_controller.rb:16:in `block in index'
+  app/controllers/products_controller.rb:16:in `times'
+  app/controllers/products_controller.rb:16:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (58.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:12:18) [GET]
+Rendering template within layouts/products
+Rendering products/index
+
+ActionView::TemplateError (undefined method `name' for #<BSON::OrderedHash:0x00000005648448>) on line #11 of app/views/products/index.html.erb:
+8: 
+9: <% @products.each do |product| %>
+10:   <tr>
+11:     <td><%=h product.name %></td>
+12:     <td><%=h product.sku %></td>
+13:     <td><%= link_to 'Show', product %></td>
+14:     <td><%= link_to 'Edit', edit_product_path(product) %></td>
+
+    app/views/products/index.html.erb:11:in `block in _run_erb_app47views47products47index46html46erb'
+    mongo (1.0.4) lib/mongo/cursor.rb:183:in `each'
+    app/views/products/index.html.erb:9
+    app/controllers/products_controller.rb:20:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (46.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:13:06) [GET]
+Rendering template within layouts/products
+Rendering products/index
+
+ActionView::TemplateError (undefined local variable or method `producs' for #<ActionView::Base:0x00000004822c40>) on line #12 of app/views/products/index.html.erb:
+9: <% @products.each do |product| %>
+10:   <tr>
+11:     <td><%=h product["name"] %></td>
+12:     <td><%=h producs["sku"] %></td>
+13:     <td><%= link_to 'Show', product %></td>
+14:     <td><%= link_to 'Edit', edit_product_path(product) %></td>
+15:     <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/products/index.html.erb:12:in `block in _run_erb_app47views47products47index46html46erb'
+    mongo (1.0.4) lib/mongo/cursor.rb:183:in `each'
+    app/views/products/index.html.erb:9
+    app/controllers/products_controller.rb:20:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:13:27) [GET]
+Rendering template within layouts/products
+Rendering products/index
+
+ActionView::TemplateError (edit_product_url failed to generate from {:controller=>"products", :action=>"edit", :_id=>BSON::ObjectID('4c6b6bf71d41c83071000015'), :name=>"Product-0", :sku=>"000-0"}, expected: {:controller=>"products", :action=>"edit"}, diff: {:_id=>BSON::ObjectID('4c6b6bf71d41c83071000015'), :name=>"Product-0", :sku=>"000-0"}) on line #14 of app/views/products/index.html.erb:
+11:     <td><%=h product["name"] %></td>
+12:     <td><%=h product["sku"] %></td>
+13:     <td><%= link_to 'Show', product %></td>
+14:     <td><%= link_to 'Edit', edit_product_path(product) %></td>
+15:     <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+17: <% end %>
+
+    (eval):17:in `edit_product_path'
+    app/views/products/index.html.erb:14:in `block in _run_erb_app47views47products47index46html46erb'
+    mongo (1.0.4) lib/mongo/cursor.rb:183:in `each'
+    app/views/products/index.html.erb:9
+    app/controllers/products_controller.rb:20:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (57.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-18 01:13:50) [GET]
+Rendering template within layouts/products
+Rendering products/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/products]
