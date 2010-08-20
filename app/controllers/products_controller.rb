@@ -1,26 +1,8 @@
-require 'rubygems'
-require 'mongo'
-
 class ProductsController < ApplicationController
   # GET /products
   # GET /products.xml
   def index
-    #@products = Product.all
-
-    conn = Mongo::Connection.new("localhost", 27017,:slave_ok => true)
-    db = conn.db("Kritk")
-    products = db.collection("products")
-    products.remove()
-
-    # create dummy products
-    10.times { |i| products.insert("name"=>"Product-" + i.to_s(), "sku"=>"000-" + i.to_s()) }
-
-    @products = products.find()
-    
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @products }
-    end
+    @products = Product.all
   end
 
   # GET /products/1
