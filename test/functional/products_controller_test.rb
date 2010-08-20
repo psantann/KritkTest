@@ -1,45 +1,54 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
-  test "should get index" do
+  def test_index
     get :index
-    assert_response :success
-    assert_not_nil assigns(:products)
+    assert_template 'index'
   end
-
-  test "should get new" do
+  
+  def test_show
+    get :show, :id => Product.first
+    assert_template 'show'
+  end
+  
+  def test_new
     get :new
-    assert_response :success
+    assert_template 'new'
   end
-
-  test "should create product" do
-    assert_difference('Product.count') do
-      post :create, :product => { }
-    end
-
-    assert_redirected_to product_path(assigns(:product))
+  
+  def test_create_invalid
+    Product.any_instance.stubs(:valid?).returns(false)
+    post :create
+    assert_template 'new'
   end
-
-  test "should show product" do
-    get :show, :id => products(:one).to_param
-    assert_response :success
+  
+  def test_create_valid
+    Product.any_instance.stubs(:valid?).returns(true)
+    post :create
+    assert_redirected_to product_url(assigns(:product))
   end
-
-  test "should get edit" do
-    get :edit, :id => products(:one).to_param
-    assert_response :success
+  
+  def test_edit
+    get :edit, :id => Product.first
+    assert_template 'edit'
   end
-
-  test "should update product" do
-    put :update, :id => products(:one).to_param, :product => { }
-    assert_redirected_to product_path(assigns(:product))
+  
+  def test_update_invalid
+    Product.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Product.first
+    assert_template 'edit'
   end
-
-  test "should destroy product" do
-    assert_difference('Product.count', -1) do
-      delete :destroy, :id => products(:one).to_param
-    end
-
-    assert_redirected_to products_path
+  
+  def test_update_valid
+    Product.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Product.first
+    assert_redirected_to product_url(assigns(:product))
+  end
+  
+  def test_destroy
+    product = Product.first
+    delete :destroy, :id => product
+    assert_redirected_to products_url
+    assert !Product.exists?(product.id)
   end
 end

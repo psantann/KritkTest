@@ -1,20 +1,8 @@
-<h1>Editing product</h1>
+<% title "Edit Product" %>
 
-<% form_for(@product) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => 'form' %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :sku %><br />
-    <%= f.text_field :sku %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+<p>
+  <%= link_to "Show", @product %> |
+  <%= link_to "View All", products_path %>
+</p>

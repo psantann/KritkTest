@@ -1,0 +1,12 @@
+<% form_for @product_review do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :review %><br />
+    <%= f.text_field :review %>
+  </p>
+  <p>
+    <%= f.label :bought_at %><br />
+    <%= f.text_field :bought_at %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
