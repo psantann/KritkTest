@@ -1,0 +1,2 @@
+module SocialFriendsHelper
+end

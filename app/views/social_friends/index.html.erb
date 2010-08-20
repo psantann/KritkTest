@@ -1,0 +1,29 @@
+<% title "Social Friends" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Has Facebook</th>
+    <th>Has Twitter</th>
+    <th>Has Linked In</th>
+    <th>Has Kritk</th>
+    <th>Kritk</th>
+    <th>Trust Level</th>
+  </tr>
+  <% for social_friend in @social_friends %>
+    <tr>
+      <td><%=h social_friend.name %></td>
+      <td><%=h social_friend.has_facebook %></td>
+      <td><%=h social_friend.has_twitter %></td>
+      <td><%=h social_friend.has_linked_in %></td>
+      <td><%=h social_friend.has_kritk %></td>
+      <td><%=h social_friend.kritk_id %></td>
+      <td><%=h social_friend.trust_level %></td>
+      <td><%= link_to "Show", social_friend %></td>
+      <td><%= link_to "Edit", edit_social_friend_path(social_friend) %></td>
+      <td><%= link_to "Destroy", social_friend, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Social Friend", new_social_friend_path %></p>

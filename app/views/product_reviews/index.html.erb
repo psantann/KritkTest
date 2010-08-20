@@ -1,0 +1,19 @@
+<% title "Product Reviews" %>
+
+<table>
+  <tr>
+    <th>Review</th>
+    <th>Bought At</th>
+  </tr>
+  <% for product_review in @product_reviews %>
+    <tr>
+      <td><%=h product_review.review %></td>
+      <td><%=h product_review.bought_at %></td>
+      <td><%= link_to "Show", product_review %></td>
+      <td><%= link_to "Edit", edit_product_review_path(product_review) %></td>
+      <td><%= link_to "Destroy", product_review, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Product Review", new_product_review_path %></p>

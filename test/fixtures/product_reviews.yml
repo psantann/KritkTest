@@ -1,0 +1,7 @@
+one:
+  review: MyString
+  bought_at: MyString
+
+two:
+  review: MyString
+  bought_at: MyString

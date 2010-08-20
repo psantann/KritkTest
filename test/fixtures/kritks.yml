@@ -1,0 +1,15 @@
+one:
+  name: MyString
+  kritk_login: 
+  kritk_pwd: MyString
+  has_facebook: false
+  has_twitter: false
+  has_linked_in: false
+
+two:
+  name: MyString
+  kritk_login: 
+  kritk_pwd: MyString
+  has_facebook: false
+  has_twitter: false
+  has_linked_in: false

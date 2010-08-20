@@ -1,0 +1,32 @@
+<% title "Kritk" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @kritk.name %>
+</p>
+<p>
+  <strong>Kritk Login:</strong>
+  <%=h @kritk.kritk_login %>
+</p>
+<p>
+  <strong>Kritk Pwd:</strong>
+  <%=h @kritk.kritk_pwd %>
+</p>
+<p>
+  <strong>Has Facebook:</strong>
+  <%=h @kritk.has_facebook %>
+</p>
+<p>
+  <strong>Has Twitter:</strong>
+  <%=h @kritk.has_twitter %>
+</p>
+<p>
+  <strong>Has Linked In:</strong>
+  <%=h @kritk.has_linked_in %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_kritk_path(@kritk) %> |
+  <%= link_to "Destroy", @kritk, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", kritks_path %>
+</p>

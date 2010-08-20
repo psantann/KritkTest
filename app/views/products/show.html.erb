@@ -1,13 +1,16 @@
-<p>
-  <b>Name:</b>
-  <%=h @product.name %>
-</p>
+<% title "Product" %>
 
 <p>
-  <b>Sku:</b>
+  <strong>Name:</strong>
+  <%=h @product.name %>
+</p>
+<p>
+  <strong>Sku:</strong>
   <%=h @product.sku %>
 </p>
 
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<p>
+  <%= link_to "Edit", edit_product_path(@product) %> |
+  <%= link_to "Destroy", @product, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", products_path %>
+</p>

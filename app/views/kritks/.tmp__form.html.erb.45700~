@@ -1,0 +1,28 @@
+<% form_for @kritk do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :kritk_login %><br />
+    <%= f.text_field :kritk_login %>
+  </p>
+  <p>
+    <%= f.label :kritk_pwd %><br />
+    <%= f.text_field :kritk_pwd %>
+  </p>
+  <p>
+    <%= f.label :has_facebook %><br />
+    <%= f.check_box :has_facebook %>
+  </p>
+  <p>
+    <%= f.label :has_twitter %><br />
+    <%= f.check_box :has_twitter %>
+  </p>
+  <p>
+    <%= f.label :has_linked_in %><br />
+    <%= f.check_box :has_linked_in %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

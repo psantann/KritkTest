@@ -1,0 +1,32 @@
+<% form_for @social_friend do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :has_facebook %><br />
+    <%= f.check_box :has_facebook %>
+  </p>
+  <p>
+    <%= f.label :has_twitter %><br />
+    <%= f.check_box :has_twitter %>
+  </p>
+  <p>
+    <%= f.label :has_linked_in %><br />
+    <%= f.check_box :has_linked_in %>
+  </p>
+  <p>
+    <%= f.label :has_kritk %><br />
+    <%= f.check_box :has_kritk %>
+  </p>
+  <p>
+    <%= f.label :kritk_id %><br />
+    <%= f.text_field :kritk_id %>
+  </p>
+  <p>
+    <%= f.label :trust_level %><br />
+    <%= f.text_field :trust_level %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

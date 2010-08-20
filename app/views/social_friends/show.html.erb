@@ -1,0 +1,36 @@
+<% title "Social Friend" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @social_friend.name %>
+</p>
+<p>
+  <strong>Has Facebook:</strong>
+  <%=h @social_friend.has_facebook %>
+</p>
+<p>
+  <strong>Has Twitter:</strong>
+  <%=h @social_friend.has_twitter %>
+</p>
+<p>
+  <strong>Has Linked In:</strong>
+  <%=h @social_friend.has_linked_in %>
+</p>
+<p>
+  <strong>Has Kritk:</strong>
+  <%=h @social_friend.has_kritk %>
+</p>
+<p>
+  <strong>Kritk:</strong>
+  <%=h @social_friend.kritk_id %>
+</p>
+<p>
+  <strong>Trust Level:</strong>
+  <%=h @social_friend.trust_level %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_social_friend_path(@social_friend) %> |
+  <%= link_to "Destroy", @social_friend, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", social_friends_path %>
+</p>
