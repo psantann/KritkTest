@@ -507,3 +507,119 @@ ActionController::RoutingError (No route matches "/projects" with {:method=>:get
   /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-19 22:23:53) [GET]
+
+ActionController::RoutingError (No route matches "/projects" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-08-19 22:23:58) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 39ms (View: 5, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 22:24:02) [GET]
+
+Mongo::ConnectionFailure (failed to connect to any given host:port):
+  mongo (1.0.7) lib/mongo/connection.rb:473:in `connect'
+  mongo (1.0.7) lib/mongo/connection.rb:123:in `initialize'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:8:in `new'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:8:in `connection'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:33:in `database'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/persistence.rb:29:in `database'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/persistence.rb:47:in `collection'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/querying.rb:62:in `query'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/sci.rb:18:in `query'
+  app/controllers/products_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 22:25:04) [GET]
+
+Mongo::ConnectionFailure (failed to connect to any given host:port):
+  mongo (1.0.7) lib/mongo/connection.rb:473:in `connect'
+  mongo (1.0.7) lib/mongo/connection.rb:123:in `initialize'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:8:in `new'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:8:in `connection'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/connection.rb:33:in `database'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/persistence.rb:29:in `database'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/persistence.rb:47:in `collection'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/querying.rb:62:in `query'
+  /usr/lib/ruby/gems/1.9.1/gems/mongo_mapper-0.8.3/lib/mongo_mapper/plugins/sci.rb:18:in `query'
+  app/controllers/products_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 22:26:00) [GET]
+Rendering template within layouts/products
+Rendering products/index
+Completed in 66ms (View: 47, DB: 0) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-08-19 22:26:14) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#create (for 127.0.0.1 at 2010-08-19 22:26:21) [POST]
+  Parameters: {"authenticity_token"=>"sS8hrWhQbxcZdHAxRoJu54aFkM4UHj4LX7n60kBS2Oo=", "product"=>{"name"=>"Canon DSLR 9000", "sku"=>"SKU-001"}, "commit"=>"Create"}
+Redirected to http://localhost:3000/products/4c6de7cd1d41c80d32000002
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/products]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-08-19 22:26:21) [GET]
+  Parameters: {"id"=>"4c6de7cd1d41c80d32000002"}
+Rendering template within layouts/products
+Rendering products/show
+Completed in 38ms (View: 12, DB: 0) | 200 OK [http://localhost/products/4c6de7cd1d41c80d32000002]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-08-19 22:26:26) [GET]
+  Parameters: {"id"=>"4c6de7cd1d41c80d32000002"}
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/products/4c6de7cd1d41c80d32000002/edit]
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2010-08-19 22:26:27) [PUT]
+  Parameters: {"authenticity_token"=>"sS8hrWhQbxcZdHAxRoJu54aFkM4UHj4LX7n60kBS2Oo=", "product"=>{"name"=>"Canon DSLR 9000", "sku"=>"SKU-001"}, "commit"=>"Update", "id"=>"4c6de7cd1d41c80d32000002"}
+Redirected to http://localhost:3000/products/4c6de7cd1d41c80d32000002
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/products/4c6de7cd1d41c80d32000002]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-08-19 22:26:27) [GET]
+  Parameters: {"id"=>"4c6de7cd1d41c80d32000002"}
+Rendering template within layouts/products
+Rendering products/show
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/products/4c6de7cd1d41c80d32000002]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-08-19 22:26:28) [GET]
+Rendering template within layouts/products
+Rendering products/index
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/products]

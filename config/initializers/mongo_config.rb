@@ -1,1 +1,1 @@
-MongoMapper.database = "todo-#{Rails.env}"  
+MongoMapper.database = "Kritk-#{Rails.env}"  
