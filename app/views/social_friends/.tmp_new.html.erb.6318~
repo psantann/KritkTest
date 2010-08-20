@@ -1,5 +1,0 @@
-<% title "New Social Friend" %>
-
-<%= render :partial => 'form' %>
-
-<p><%= link_to "Back to List", social_friends_path %></p>

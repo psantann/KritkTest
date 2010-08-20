@@ -1,8 +1,0 @@
-<% title "Edit Social Friend" %>
-
-<%= render :partial => 'form' %>
-
-<p>
-  <%= link_to "Show", @social_friend %> |
-  <%= link_to "View All", social_friends_path %>
-</p>
